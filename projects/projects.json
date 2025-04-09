@@ -1,32 +1,32 @@
 [
     {
-      "name": "Product Display Site",
-      "desc": "Designed a modern, user-friendly eCommerce platform exclusively for Casio watches",
-      "image": "instagrammern",
-      "category": "mern",
+      "name": "Netflix Login & Home Page",
+      "desc": "Redesigned Sign in page and Home page of Netflix as a personal Project.",
+      "image": "netflix",
+      "category": "online streaming",
       "links": {
-        "view": "https://www.behance.net/toboworld",
-        "code": "https://www.behance.net/toboworld"
+        "view": "https://www.behance.net/gallery/222616793/Recreated-Netflix-UI-in-Figma-as-Practice-Project",
+        "code": "https://www.behance.net/gallery/222616793/Recreated-Netflix-UI-in-Figma-as-Practice-Project"
       }
     },
     {
-      "name": "Oneline Property Booking Site",
+      "name": "Online Property Booking Site",
       "desc": "A platform that connects hosts with travelers to book unique accommodations worldwide.",
-      "image": "flipkartmern",
-      "category": "mern",
+      "image": "airbnb",
+      "category": "online booking",
       "links": {
-        "view": "https://www.behance.net/toboworld",
-        "code": "https://www.behance.net/toboworld"
+        "view": "https://www.behance.net/gallery/222139461/Property-Booking-site",
+        "code": "https://www.behance.net/gallery/222139461/Property-Booking-site"
       }
     },
     {
-      "name": "College Project for 7th semister",
-      "desc": "Password manager/secure vault",
-      "image": "resumegen",
-      "category": "mern",
+      "name": "Product display site",
+      "desc": "A modern looking site to display eco friendly product",
+      "image": "products design",
+      "category": "product site",
       "links": {
-        "view": "https://www.behance.net/toboworld",
-        "code": "https://www.behance.net/toboworld"
+        "view": "https://www.behance.net/gallery/223292049/A-modern-looking-site-to-display-eco-friendly-product",
+        "code": "https://www.behance.net/gallery/223292049/A-modern-looking-site-to-display-eco-friendly-product"
       }
     }
   ]

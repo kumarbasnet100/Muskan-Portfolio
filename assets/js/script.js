@@ -37,21 +37,32 @@ $(document).ready(function () {
         }, 500, 'linear')
     });
 
-    // <!-- emailjs to mail contact form data -->
-    $("#contact-form").submit(function (event) {
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
+/*=============== EMAIL JS ===============*/
+const contactForm = document.getElementById('contact-form'),
+    contactMessage = document.getElementById('contact-message')
 
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
-            }, function (error) {
-                console.log('FAILED...', error);
-                alert("Form Submission Failed! Try Again");
-            });
-        event.preventDefault();
-    });
+const sendEmail = (e) =>{
+     e.preventDefault()
+     // serviceID - templateID - #form - publicKey
+     emailjs.sendForm('service_nywr8yv','template_kts2svk','#contact-form','ZCh4myylzMCgN1rt5')
+     .then(()=>{
+         // Show sent message
+         contactMessage.textContent = 'Message sent successfully ✅'
+
+         // Remove message after five seconds
+         setTimeout(()=>{
+            contactMessage.textContent = ''
+         }, 5000)
+
+         // Clear input fields
+         contactForm.reset()
+     }, ()=>{
+        // Show error message
+        contactMessage.textContent = 'Message not sent (service error) ❌'
+     })
+}
+
+contactForm.addEventListener('submit', sendEmail)
     // <!-- emailjs to mail contact form data -->
 
 });
@@ -59,7 +70,7 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Jigar Sable";
+            document.title = "Portfolio | Muskan Rijal";
             $("#favicon").attr("href", "assets/images/favicon.png");
         }
         else {
@@ -96,7 +107,7 @@ function showSkills(skills) {
         skillHTML += `
         <div class="bar">
               <div class="info">
-                <img src=${skill.icon} alt="skill" />
+                <img src=${skill.icon} alt="skill" width="50"/>
                 <span>${skill.name}</span>
               </div>
             </div>`
